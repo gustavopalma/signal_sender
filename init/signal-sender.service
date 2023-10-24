@@ -1,0 +1,10 @@
+[Unit]
+Description=Serial Sender Example
+
+[Service]
+Restart=on-failure
+Type=oneshot
+ExecStart= /usr/bin/serial_signal
+
+[Install]
+WantedBy=multi-user.target
